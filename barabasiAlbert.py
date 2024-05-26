@@ -1,11 +1,10 @@
-
 from grafos4daa import *
 
 # Crear grafo
-n = 250  # Numero de nodos
-p = 0.05  # Probabilidad 
-grafo = grafoGilbert(n, p)
-grafo.guardar_grafo2("grafo_gilbert250.gv")
+n = 250  # Numero de nodos 
+d = 2  
+grafo = grafoBarabasiAlbert(n, d)
+grafo.guardar_grafo2("grafo_barabasi250.gv")
 
 # Kruskal directo
 mst_kruskal_d, valor_mst_kd = grafo.KruskalD()
